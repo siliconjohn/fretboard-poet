@@ -13,9 +13,13 @@ extern CGFloat const FRETBOARD_MAX_HEIGHT;
   CALayer *fingerboardLayer;
   CALayer *nutLayer;
   CALayer *fretNoteLayer;
+  CALayer *fingerboardMaskLeft;
+  CALayer *fingerboardMaskRight;
   
   NSMutableArray *fretNoteStrings;
   NSMutableArray *fretNoteLayerControllers;
+  
+  float fingerboardHeight, fingerBoardWidth;
 }
 
 @property (nonatomic) StringInstrument *instrument;

@@ -23,7 +23,49 @@ CGFloat const V_NOTE_SPACING = 4.0f;
     self.highlightChordScale = true;
     self.highlightChord = true;
   }
+  
   return self;
+}
+- (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
+{
+  UITouch *aTouch = [touches anyObject];
+  if(aTouch.tapCount < 2) return;
+  
+  CGPoint point = [aTouch locationInView:self];
+  
+  // if click top of fingerboard
+  if ( point.y < fingerboardHeight / 2 )
+  {
+    // move left mask
+    // if click on nut or open string make dissapear
+    if(point.x <= OPEN_STRING_WIDTH + NUT_WIDTH)
+    {
+      fingerboardMaskLeft.frame = CGRectMake( OPEN_STRING_WIDTH + NUT_WIDTH, fingerboardMaskLeft.frame.origin.y, 0, fingerboardMaskLeft.frame.size.height);
+    }
+    else
+    {
+      if (point.x + 20 < fingerboardMaskRight.frame.origin.x )
+      {
+        fingerboardMaskLeft.frame = CGRectMake( OPEN_STRING_WIDTH + NUT_WIDTH, fingerboardMaskLeft.frame.origin.y, point.x - (OPEN_STRING_WIDTH + NUT_WIDTH), fingerboardMaskLeft.frame.size.height);
+      }
+    }
+  }
+  else
+  {
+    // move right mask
+    // if click on nut or open string make dissapear
+    if(point.x <= OPEN_STRING_WIDTH + NUT_WIDTH)
+    {
+      fingerboardMaskRight.frame = CGRectMake( OPEN_STRING_WIDTH + NUT_WIDTH + fingerBoardWidth, fingerboardMaskRight.frame.origin.y, 0,  fingerboardMaskRight.frame.size.height );
+    }
+    else
+    {
+      if (point.x - 20 > fingerboardMaskLeft.frame.origin.x + fingerboardMaskLeft.frame.size.width)
+      {
+        fingerboardMaskRight.frame = CGRectMake(point.x, fingerboardMaskRight.frame.origin.y, OPEN_STRING_WIDTH + NUT_WIDTH + fingerBoardWidth - point.x + FRET_WIRE_WIDTH,  fingerboardMaskRight.frame.size.height );
+      }
+    }
+  }
 }
 
 - (void) setupFretboard
@@ -49,7 +91,7 @@ CGFloat const V_NOTE_SPACING = 4.0f;
   if( stringCount == 4 ) extraFingerboardHeight = -8;
   if( stringCount == 6 ) extraFingerboardHeight = 8;
   if( stringCount == 7 ) extraFingerboardHeight = 23;
-  float fingerboardHeight = FINGERBOARD_MAX_HEIGHT + extraFingerboardHeight;
+  fingerboardHeight = FINGERBOARD_MAX_HEIGHT + extraFingerboardHeight;
   
   // vert area for each string
   float stringRectHeight = fingerboardHeight / stringCount;
@@ -75,7 +117,7 @@ CGFloat const V_NOTE_SPACING = 4.0f;
   // set fingerboard width based on fret sizes
   //////////////////////////////////////////////
   
-  float fingerBoardWidth = [[fretXs lastObject] floatValue] - NUT_WIDTH - OPEN_STRING_WIDTH;
+  fingerBoardWidth = [[fretXs lastObject] floatValue] - NUT_WIDTH - OPEN_STRING_WIDTH;
   
   ///////////////////////////////////
   // starting Xs of note rects
@@ -368,6 +410,26 @@ CGFloat const V_NOTE_SPACING = 4.0f;
   }
   
   [self.layer addSublayer:fretNoteLayer];
+  
+  ///////////////////////////////////
+  // draw left highlight mask
+  ///////////////////////////////////
+  
+  fingerboardMaskLeft = [CALayer layer];
+  fingerboardMaskLeft.frame = CGRectMake( OPEN_STRING_WIDTH + NUT_WIDTH, fretboardY, 0, fingerboardHeight );
+  fingerboardMaskLeft.backgroundColor = [UIColor blackColor].CGColor;
+  [self.layer addSublayer:fingerboardMaskLeft];
+  fingerboardMaskLeft.opacity = 0.7;
+ 
+  ///////////////////////////////////
+  // draw right highlight mask
+  ///////////////////////////////////
+  
+  fingerboardMaskRight = [CALayer layer];
+  fingerboardMaskRight.frame = CGRectMake( OPEN_STRING_WIDTH + NUT_WIDTH + fingerBoardWidth, fretboardY, 0, fingerboardHeight );
+  fingerboardMaskRight.backgroundColor = [UIColor blackColor].CGColor;
+  [self.layer addSublayer:fingerboardMaskRight];
+  fingerboardMaskRight.opacity = 0.7;
 }
 
 - (void) setTrackIDObject:(NSObject *)object
