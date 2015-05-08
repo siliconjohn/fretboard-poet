@@ -27,7 +27,7 @@ CGFloat const FINGERBOARD_NUMBERS_HEIGHT = 30.0f;
 
 - (void) setupFretboard
 {
-  self.layer.sublayers = nil;
+  [self.layer.sublayers makeObjectsPerformSelector:@selector(removeFromSuperlayer)];
   
   fretNoteLayerControllers = nil;
   
