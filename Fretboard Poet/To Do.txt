@@ -1,11 +1,18 @@
+- fix fretboard options
+  - can show - note name, or scale interval, chord interval,
+    - highlight root or chord or scale
+
 - add new song
-- add more common chords dom 7
 
 
-
-
-- test for memory leaks
 - allow fretboards with < 24 frets
+- allow for banjo
+- don't sort strings
+- add more instruments - mandolin, uke
+
+- save preferences
+ - instrument
+ - fretboard options
 
 
 
@@ -16,22 +23,6 @@
 
 
 
-
-- set current fretnotecontrollers highlightChordScale props and redraw when needed
-- pretty fret note controllers when drawing
-
-
-
-
-
-
-
-
-- these need to be saved as defaults in core data
-@property (nonatomic) bool *highlightSongKey;
-@property (nonatomic) bool *highlightChordScale;
-@property (nonatomic) bool *highlightChord;
-@property (nonatomic) bool *showNoteNames;
 
 
 
