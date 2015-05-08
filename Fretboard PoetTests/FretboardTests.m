@@ -37,8 +37,8 @@
   if( test == nil ) XCTAssert(NO, @"Fail");
   
   // test string sorting- low to high
-  if([[[fretboard getStrings] firstObject] getLowNote] != [NSNumber numberWithInt:38]) XCTAssert(NO, @"Fail");
-  if([[[fretboard getStrings] lastObject] getLowNote] != [NSNumber numberWithInt:28]) XCTAssert(NO, @"Fail");
+  if([[[[fretboard getStrings] firstObject] getLowNote] intValue] != 38 ) XCTAssert(NO, @"Fail");
+  if([[[[fretboard getStrings] lastObject] getLowNote] intValue] != 28) XCTAssert(NO, @"Fail");
   
   XCTAssert(YES, @"Pass");
 }

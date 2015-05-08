@@ -7,9 +7,13 @@
 - (void) setNotes:(NSNumber *)newLowNote newHighNote:(NSNumber *)newHighNote
 {
   if( !newLowNote || !newHighNote ) return;
-  if( newLowNote > newHighNote ) return;
-  if( newLowNote < [NSNumber numberWithInt:0] || newLowNote > [NSNumber numberWithInt:128] ) return;
-  if( newHighNote < [NSNumber numberWithInt:0] || newHighNote > [NSNumber numberWithInt:128] ) return;
+  
+  int low = [newLowNote intValue];
+  int high = [newHighNote intValue];
+  
+  if( low > high ) return;
+  if( low < 0 || low > 128 ) return;
+  if( high < 0 || high > 128 ) return;
   
   lowNote = newLowNote;
   highNote = newHighNote;

@@ -144,12 +144,12 @@
   NSArray *notes = [tempnotes sortedArrayUsingComparator:
                    ^NSComparisonResult( id obj1, id obj2 )
                    {
-                     if ([obj1 valueForKey:@"interval"] < [obj2 valueForKey:@"interval"])
+                     if ([[obj1 valueForKey:@"interval"]intValue] < [[obj2 valueForKey:@"interval"]intValue])
                      {
                        return NSOrderedAscending;
                      }
                      else
-                     if ([obj1 valueForKey:@"interval"] > [obj2 valueForKey:@"interval"])
+                     if ([[obj1 valueForKey:@"interval"]intValue] > [[obj2 valueForKey:@"interval"]intValue])
                      {
                        return NSOrderedDescending;
                      }

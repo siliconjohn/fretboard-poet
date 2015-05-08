@@ -31,12 +31,12 @@
   NSArray *temp = [strings sortedArrayUsingComparator:
                   ^NSComparisonResult( id obj1, id obj2 )
                   {
-                    if ([obj1 getLowNote] > [obj2 getLowNote])
+                    if ([[obj1 getLowNote] intValue] > [[obj2 getLowNote]intValue])
                     {
                       return NSOrderedAscending;
                     }
                     else
-                      if ([obj1 getLowNote] < [obj2 getLowNote])
+                      if ([[obj1 getLowNote]intValue] < [[obj2 getLowNote]intValue])
                       {
                         return NSOrderedDescending;
                       }
