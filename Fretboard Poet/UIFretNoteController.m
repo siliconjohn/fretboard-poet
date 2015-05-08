@@ -32,15 +32,20 @@ NSString * const ALL_NOTES_OFF_NOTIFICATION = @"ALL_NOTES_OFF_NOTIFICATION";
   }
   return self;
 }
-//
-//- (void)drawLayer:(CALayer *)layer inContext:(CGContextRef)context
-//{
-////  CGColorRef bgColor = [UIColor colorWithHue:0.6 saturation:1.0 brightness:1.0 alpha:1.0].CGColor;
-////  CGContextSetFillColorWithColor(context, bgColor);
-////  CGContextFillRect(context, layer.bounds);
-////  
-//  
-//}
+
+- (void)drawLayer:(CALayer *)layer inContext:(CGContextRef)context
+{
+  // blue
+  if (hasChord && ! hasChordScale )
+  {
+    CGColorRef bgColor = [UIColor colorWithRed:0 green:0 blue:1 alpha:0.9].CGColor;
+    CGContextSetFillColorWithColor(context, bgColor);
+
+    CGRect rect = layer.bounds;
+    rect.origin.x = rect.size.width / 2;
+    CGContextFillRect(context, rect);
+  }
+}
 
 - (void)noteOnNotification:(NSNotification*)notification;
 {
@@ -48,9 +53,9 @@ NSString * const ALL_NOTES_OFF_NOTIFICATION = @"ALL_NOTES_OFF_NOTIFICATION";
   
   NSString *myNote = [self.note valueForKey:@"note"];
   
-  bool hasChord = false;
-  bool hasChordScale = false;
-  bool hasKey = false;
+  hasChord = false;
+  hasChordScale = false;
+  hasKey = false;
   
   if(self.highlightChord == true )
   {
@@ -122,13 +127,13 @@ NSString * const ALL_NOTES_OFF_NOTIFICATION = @"ALL_NOTES_OFF_NOTIFICATION";
       self.layer.backgroundColor = [UIColor colorWithRed:0 green:1 blue:0 alpha:0.9].CGColor;
     }
     
-    // blue
-    if (hasChord && ! hasChordScale )
-    {
-      self.layer.backgroundColor = [UIColor colorWithRed:0 green:0 blue:1 alpha:0.9].CGColor;
-    }
+//    // blue
+//    if (hasChord && ! hasChordScale )
+//    {
+//      self.layer.backgroundColor = [UIColor colorWithRed:0 green:0 blue:1 alpha:0.9].CGColor;
+//    }
     
-    
+    [self.layer setNeedsDisplay];
   }
   
   ////////////////////////
@@ -179,6 +184,7 @@ NSString * const ALL_NOTES_OFF_NOTIFICATION = @"ALL_NOTES_OFF_NOTIFICATION";
   _layer = layer;
   _layer.masksToBounds = YES;
   _layer.cornerRadius = 14.0;
+  _layer.delegate = self;
   
   CATextLayer *label = [CATextLayer new];
   [label setFont: @"Helvetica-Bold"];

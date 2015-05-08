@@ -11,6 +11,12 @@ extern NSString * const NOTE_OFF_NOTIFICATION;
 extern NSString * const ALL_NOTES_OFF_NOTIFICATION;
 
 @interface UIFretNoteController : NSObject
+{
+  @private
+  bool hasChord;
+  bool hasChordScale;
+  bool hasKey;
+}
 
 @property (nonatomic) CALayer *layer;
 @property (atomic) NSDictionary *note;
