@@ -1,0 +1,707 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0B1D0BF91ACC09B5009F155D /* InstrumentString.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B1D0BF81ACC09B5009F155D /* InstrumentString.m */; };
+		0B1D0BFB1ACC0A04009F155D /* GuitarStringTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B1D0BFA1ACC0A04009F155D /* GuitarStringTests.m */; };
+		0B3A4B631AB28BCA00A2FCC7 /* TrackRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B3A4B621AB28BCA00A2FCC7 /* TrackRecorder.m */; };
+		0B3C27311ABC1E9A0026BE8C /* ChordsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B3C27301ABC1E9A0026BE8C /* ChordsTests.m */; };
+		0B408C8D1AA45BA200FA798D /* TimeEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B408C8C1AA45BA200FA798D /* TimeEvent.m */; };
+		0B408C8E1AA4677200FA798D /* TimeEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B408C8C1AA45BA200FA798D /* TimeEvent.m */; };
+		0B408C8F1AA4677500FA798D /* TimeEvents.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BD059F91A9DA29300E82D54 /* TimeEvents.m */; };
+		0B4236E61ABD668500E18DE4 /* PatternMatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B4236E51ABD668500E18DE4 /* PatternMatcher.m */; };
+		0B4236EC1ABD6A6C00E18DE4 /* ScalesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B4236EB1ABD6A6C00E18DE4 /* ScalesTests.m */; };
+		0B789C841ACD42C2000F0BBC /* StringInstrument.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B789C831ACD42C2000F0BBC /* StringInstrument.m */; };
+		0B789C861ACD44EE000F0BBC /* FretboardTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B789C851ACD44EE000F0BBC /* FretboardTests.m */; };
+		0B800A911AA6BD410045FC55 /* Track.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B800A901AA6BD410045FC55 /* Track.m */; };
+		0B800A921AA6BD410045FC55 /* Track.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B800A901AA6BD410045FC55 /* Track.m */; };
+		0B8E12DE1AA5F68C00AF2648 /* testsong.json in Resources */ = {isa = PBXBuildFile; fileRef = 0B8E12DC1AA5F68C00AF2648 /* testsong.json */; };
+		0B8E12E01AA5F75E00AF2648 /* TrackTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B8E12DF1AA5F75E00AF2648 /* TrackTests.m */; };
+		0B8E12E21AA5F82600AF2648 /* TrackDataTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B8E12E11AA5F82600AF2648 /* TrackDataTests.m */; };
+		0B8F47B21AD1532E004E661D /* UIFretboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B8F47B11AD1532E004E661D /* UIFretboard.m */; };
+		0B8F47B51AD15860004E661D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B8F47B41AD15860004E661D /* QuartzCore.framework */; };
+		0B8F47B81AD158AF004E661D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B8F47B71AD158AF004E661D /* AVFoundation.framework */; };
+		0B8F47BC1AD16236004E661D /* fretboard.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B8F47BB1AD16236004E661D /* fretboard.png */; };
+		0B90061A1AA88EE400864948 /* samplesong.json in Resources */ = {isa = PBXBuildFile; fileRef = 0B9006181AA88EE400864948 /* samplesong.json */; };
+		0B90061B1AA88EE400864948 /* samplesong.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 0B9006191AA88EE400864948 /* samplesong.m4a */; };
+		0B9006201AA8928E00864948 /* testsong.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0B90061F1AA8928E00864948 /* testsong.mp3 */; };
+		0BA828FC1AB6CF6400821ED9 /* Notes.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BA828FB1AB6CF6400821ED9 /* Notes.m */; };
+		0BA828FF1AB6D09300821ED9 /* NotesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BA828FE1AB6D09300821ED9 /* NotesTests.m */; };
+		0BB5FF4F1AD2532300F7D28B /* fret.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BB5FF4E1AD2532300F7D28B /* fret.png */; };
+		0BBD19D31AB5ACED0026F17D /* Scales.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BBD19D21AB5ACED0026F17D /* Scales.m */; };
+		0BBD19D91AB5B1660026F17D /* Chords.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BBD19D81AB5B1660026F17D /* Chords.m */; };
+		0BD059F71A99F30A00E82D54 /* TrackData.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BD059F61A99F30A00E82D54 /* TrackData.m */; };
+		0BD059FA1A9DA29300E82D54 /* TimeEvents.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BD059F91A9DA29300E82D54 /* TimeEvents.m */; };
+		0BD8063C1AA6C1B000AD89AA /* TimedEventsTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BD8063B1AA6C1B000AD89AA /* TimedEventsTest.m */; };
+		0BDAA6DC1AD8D71300374658 /* UIFretNoteController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BDAA6DB1AD8D71300374658 /* UIFretNoteController.m */; };
+		0BE5CC7F1A971310000B5790 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BE5CC7E1A971310000B5790 /* main.m */; };
+		0BE5CC821A971310000B5790 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BE5CC811A971310000B5790 /* AppDelegate.m */; };
+		0BE5CC851A971310000B5790 /* TrackPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BE5CC841A971310000B5790 /* TrackPlayerView.m */; };
+		0BE5CC881A971310000B5790 /* TrackRecorderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BE5CC871A971310000B5790 /* TrackRecorderView.m */; };
+		0BE5CC8B1A971310000B5790 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BE5CC891A971310000B5790 /* Main.storyboard */; };
+		0BE5CC8D1A971310000B5790 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0BE5CC8C1A971310000B5790 /* Images.xcassets */; };
+		0BE5CC901A971310000B5790 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0BE5CC8E1A971310000B5790 /* LaunchScreen.xib */; };
+		0BE5CCAE1A972889000B5790 /* TrackPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BE5CCAD1A972889000B5790 /* TrackPlayer.m */; };
+		0BF30C511AB31E0E00BE6E2E /* TrackRecorderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BF30C501AB31E0E00BE6E2E /* TrackRecorderTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0BE5CC961A971310000B5790 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0BE5CC711A971310000B5790 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0BE5CC781A971310000B5790;
+			remoteInfo = "Fretboard Poet";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0B1D0BF71ACC09B5009F155D /* InstrumentString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InstrumentString.h; sourceTree = "<group>"; };
+		0B1D0BF81ACC09B5009F155D /* InstrumentString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InstrumentString.m; sourceTree = "<group>"; };
+		0B1D0BFA1ACC0A04009F155D /* GuitarStringTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GuitarStringTests.m; sourceTree = "<group>"; };
+		0B3A4B611AB28BCA00A2FCC7 /* TrackRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrackRecorder.h; sourceTree = "<group>"; };
+		0B3A4B621AB28BCA00A2FCC7 /* TrackRecorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrackRecorder.m; sourceTree = "<group>"; };
+		0B3C27301ABC1E9A0026BE8C /* ChordsTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChordsTests.m; sourceTree = "<group>"; };
+		0B408C8B1AA45BA200FA798D /* TimeEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TimeEvent.h; path = "Fretboard Poet/TimeEvent.h"; sourceTree = SOURCE_ROOT; };
+		0B408C8C1AA45BA200FA798D /* TimeEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TimeEvent.m; path = "Fretboard Poet/TimeEvent.m"; sourceTree = SOURCE_ROOT; };
+		0B4236E41ABD668500E18DE4 /* PatternMatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PatternMatcher.h; sourceTree = "<group>"; };
+		0B4236E51ABD668500E18DE4 /* PatternMatcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PatternMatcher.m; sourceTree = "<group>"; };
+		0B4236EB1ABD6A6C00E18DE4 /* ScalesTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScalesTests.m; sourceTree = "<group>"; };
+		0B42E8241AE7825B0072373F /* To Do.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "To Do.txt"; sourceTree = "<group>"; };
+		0B789C821ACD42C2000F0BBC /* StringInstrument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringInstrument.h; sourceTree = "<group>"; };
+		0B789C831ACD42C2000F0BBC /* StringInstrument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StringInstrument.m; sourceTree = "<group>"; };
+		0B789C851ACD44EE000F0BBC /* FretboardTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FretboardTests.m; sourceTree = "<group>"; };
+		0B800A8F1AA6BD410045FC55 /* Track.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Track.h; sourceTree = "<group>"; };
+		0B800A901AA6BD410045FC55 /* Track.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Track.m; sourceTree = "<group>"; };
+		0B8E12DC1AA5F68C00AF2648 /* testsong.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = testsong.json; path = "Fretboard PoetTests/testsong.json"; sourceTree = SOURCE_ROOT; };
+		0B8E12DF1AA5F75E00AF2648 /* TrackTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrackTests.m; sourceTree = "<group>"; };
+		0B8E12E11AA5F82600AF2648 /* TrackDataTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrackDataTests.m; sourceTree = "<group>"; };
+		0B8F47B01AD1532E004E661D /* UIFretboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIFretboard.h; sourceTree = "<group>"; };
+		0B8F47B11AD1532E004E661D /* UIFretboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIFretboard.m; sourceTree = "<group>"; };
+		0B8F47B41AD15860004E661D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		0B8F47B71AD158AF004E661D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		0B8F47BB1AD16236004E661D /* fretboard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fretboard.png; sourceTree = "<group>"; };
+		0B9006181AA88EE400864948 /* samplesong.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = samplesong.json; sourceTree = "<group>"; };
+		0B9006191AA88EE400864948 /* samplesong.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = samplesong.m4a; sourceTree = "<group>"; };
+		0B90061F1AA8928E00864948 /* testsong.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = testsong.mp3; sourceTree = "<group>"; };
+		0BA828FA1AB6CF6400821ED9 /* Notes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Notes.h; sourceTree = "<group>"; };
+		0BA828FB1AB6CF6400821ED9 /* Notes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Notes.m; sourceTree = "<group>"; };
+		0BA828FE1AB6D09300821ED9 /* NotesTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotesTests.m; sourceTree = "<group>"; };
+		0BB5FF4E1AD2532300F7D28B /* fret.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fret.png; sourceTree = "<group>"; };
+		0BBD19D11AB5ACED0026F17D /* Scales.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Scales.h; sourceTree = "<group>"; };
+		0BBD19D21AB5ACED0026F17D /* Scales.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Scales.m; sourceTree = "<group>"; };
+		0BBD19D71AB5B1660026F17D /* Chords.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Chords.h; sourceTree = "<group>"; };
+		0BBD19D81AB5B1660026F17D /* Chords.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Chords.m; sourceTree = "<group>"; };
+		0BD059F51A99F30A00E82D54 /* TrackData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TrackData.h; path = "Fretboard Poet/TrackData.h"; sourceTree = SOURCE_ROOT; };
+		0BD059F61A99F30A00E82D54 /* TrackData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TrackData.m; path = "Fretboard Poet/TrackData.m"; sourceTree = SOURCE_ROOT; };
+		0BD059F81A9DA29300E82D54 /* TimeEvents.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TimeEvents.h; path = "Fretboard Poet/TimeEvents.h"; sourceTree = SOURCE_ROOT; };
+		0BD059F91A9DA29300E82D54 /* TimeEvents.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TimeEvents.m; path = "Fretboard Poet/TimeEvents.m"; sourceTree = SOURCE_ROOT; };
+		0BD8063B1AA6C1B000AD89AA /* TimedEventsTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimedEventsTest.m; sourceTree = "<group>"; };
+		0BDAA6DA1AD8D71300374658 /* UIFretNoteController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIFretNoteController.h; sourceTree = "<group>"; };
+		0BDAA6DB1AD8D71300374658 /* UIFretNoteController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIFretNoteController.m; sourceTree = "<group>"; };
+		0BE5CC791A971310000B5790 /* Fretboard Poet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fretboard Poet.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0BE5CC7D1A971310000B5790 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0BE5CC7E1A971310000B5790 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0BE5CC801A971310000B5790 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0BE5CC811A971310000B5790 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0BE5CC831A971310000B5790 /* TrackPlayerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TrackPlayerView.h; sourceTree = "<group>"; };
+		0BE5CC841A971310000B5790 /* TrackPlayerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TrackPlayerView.m; sourceTree = "<group>"; };
+		0BE5CC861A971310000B5790 /* TrackRecorderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TrackRecorderView.h; sourceTree = "<group>"; };
+		0BE5CC871A971310000B5790 /* TrackRecorderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TrackRecorderView.m; sourceTree = "<group>"; };
+		0BE5CC8A1A971310000B5790 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0BE5CC8C1A971310000B5790 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		0BE5CC8F1A971310000B5790 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		0BE5CC951A971310000B5790 /* Fretboard PoetTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Fretboard PoetTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0BE5CC9A1A971310000B5790 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0BE5CCAC1A972889000B5790 /* TrackPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TrackPlayer.h; path = "Fretboard Poet/TrackPlayer.h"; sourceTree = SOURCE_ROOT; };
+		0BE5CCAD1A972889000B5790 /* TrackPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TrackPlayer.m; path = "Fretboard Poet/TrackPlayer.m"; sourceTree = SOURCE_ROOT; };
+		0BF30C501AB31E0E00BE6E2E /* TrackRecorderTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrackRecorderTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0BE5CC761A971310000B5790 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B8F47B81AD158AF004E661D /* AVFoundation.framework in Frameworks */,
+				0B8F47B51AD15860004E661D /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0BE5CC921A971310000B5790 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0B07C6871AA803DA005B309C /* Track Data */ = {
+			isa = PBXGroup;
+			children = (
+				0BD059F51A99F30A00E82D54 /* TrackData.h */,
+				0BD059F61A99F30A00E82D54 /* TrackData.m */,
+				0BD059FB1A9DA6CD00E82D54 /* Time Events */,
+			);
+			name = "Track Data";
+			sourceTree = "<group>";
+		};
+		0B07C6881AA803EA005B309C /* Track Player */ = {
+			isa = PBXGroup;
+			children = (
+				0BE5CCAC1A972889000B5790 /* TrackPlayer.h */,
+				0BE5CCAD1A972889000B5790 /* TrackPlayer.m */,
+				0B07C6871AA803DA005B309C /* Track Data */,
+			);
+			name = "Track Player";
+			sourceTree = "<group>";
+		};
+		0B07C6891AA80493005B309C /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				0B8F47B31AD1534A004E661D /* UIFretboard */,
+				0BE5CC801A971310000B5790 /* AppDelegate.h */,
+				0BE5CC811A971310000B5790 /* AppDelegate.m */,
+				0BE5CC831A971310000B5790 /* TrackPlayerView.h */,
+				0BE5CC841A971310000B5790 /* TrackPlayerView.m */,
+				0BE5CC861A971310000B5790 /* TrackRecorderView.h */,
+				0BE5CC871A971310000B5790 /* TrackRecorderView.m */,
+				0BE5CC891A971310000B5790 /* Main.storyboard */,
+				0BE5CC8C1A971310000B5790 /* Images.xcassets */,
+				0BE5CC8E1A971310000B5790 /* LaunchScreen.xib */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		0B1D0BF61ACC0982009F155D /* Instrument */ = {
+			isa = PBXGroup;
+			children = (
+				0B789C821ACD42C2000F0BBC /* StringInstrument.h */,
+				0B789C831ACD42C2000F0BBC /* StringInstrument.m */,
+				0B1D0BF71ACC09B5009F155D /* InstrumentString.h */,
+				0B1D0BF81ACC09B5009F155D /* InstrumentString.m */,
+			);
+			name = Instrument;
+			sourceTree = "<group>";
+		};
+		0B3A4B601AB28BA300A2FCC7 /* Recorder */ = {
+			isa = PBXGroup;
+			children = (
+				0B3A4B611AB28BCA00A2FCC7 /* TrackRecorder.h */,
+				0B3A4B621AB28BCA00A2FCC7 /* TrackRecorder.m */,
+			);
+			name = Recorder;
+			sourceTree = "<group>";
+		};
+		0B4236E71ABD69AC00E18DE4 /* Pattern Matcher */ = {
+			isa = PBXGroup;
+			children = (
+				0B4236E41ABD668500E18DE4 /* PatternMatcher.h */,
+				0B4236E51ABD668500E18DE4 /* PatternMatcher.m */,
+			);
+			name = "Pattern Matcher";
+			sourceTree = "<group>";
+		};
+		0B4236ED1ABD6AA500E18DE4 /* Chords */ = {
+			isa = PBXGroup;
+			children = (
+				0BBD19D71AB5B1660026F17D /* Chords.h */,
+				0BBD19D81AB5B1660026F17D /* Chords.m */,
+			);
+			name = Chords;
+			sourceTree = "<group>";
+		};
+		0B4236EE1ABD6AAB00E18DE4 /* Scales */ = {
+			isa = PBXGroup;
+			children = (
+				0BBD19D11AB5ACED0026F17D /* Scales.h */,
+				0BBD19D21AB5ACED0026F17D /* Scales.m */,
+			);
+			name = Scales;
+			sourceTree = "<group>";
+		};
+		0B8F47B31AD1534A004E661D /* UIFretboard */ = {
+			isa = PBXGroup;
+			children = (
+				0B8F47B01AD1532E004E661D /* UIFretboard.h */,
+				0B8F47B11AD1532E004E661D /* UIFretboard.m */,
+				0BDAA6DA1AD8D71300374658 /* UIFretNoteController.h */,
+				0BDAA6DB1AD8D71300374658 /* UIFretNoteController.m */,
+				0B8F47BB1AD16236004E661D /* fretboard.png */,
+				0BB5FF4E1AD2532300F7D28B /* fret.png */,
+			);
+			name = UIFretboard;
+			sourceTree = "<group>";
+		};
+		0BA828FD1AB6CF6700821ED9 /* Notes */ = {
+			isa = PBXGroup;
+			children = (
+				0BA828FA1AB6CF6400821ED9 /* Notes.h */,
+				0BA828FB1AB6CF6400821ED9 /* Notes.m */,
+			);
+			name = Notes;
+			sourceTree = "<group>";
+		};
+		0BBD19D01AB5ACA70026F17D /* Music */ = {
+			isa = PBXGroup;
+			children = (
+				0B1D0BF61ACC0982009F155D /* Instrument */,
+				0BA828FD1AB6CF6700821ED9 /* Notes */,
+				0B4236EE1ABD6AAB00E18DE4 /* Scales */,
+				0B4236ED1ABD6AA500E18DE4 /* Chords */,
+				0B4236E71ABD69AC00E18DE4 /* Pattern Matcher */,
+			);
+			name = Music;
+			sourceTree = "<group>";
+		};
+		0BD059F41A99EF2400E82D54 /* Track */ = {
+			isa = PBXGroup;
+			children = (
+				0B800A8F1AA6BD410045FC55 /* Track.h */,
+				0B800A901AA6BD410045FC55 /* Track.m */,
+				0B07C6881AA803EA005B309C /* Track Player */,
+			);
+			name = Track;
+			sourceTree = "<group>";
+		};
+		0BD059FB1A9DA6CD00E82D54 /* Time Events */ = {
+			isa = PBXGroup;
+			children = (
+				0BD059F81A9DA29300E82D54 /* TimeEvents.h */,
+				0BD059F91A9DA29300E82D54 /* TimeEvents.m */,
+				0B408C8B1AA45BA200FA798D /* TimeEvent.h */,
+				0B408C8C1AA45BA200FA798D /* TimeEvent.m */,
+			);
+			name = "Time Events";
+			path = "Fretboard Poet";
+			sourceTree = SOURCE_ROOT;
+		};
+		0BE5CC701A971310000B5790 = {
+			isa = PBXGroup;
+			children = (
+				0BE5CC7B1A971310000B5790 /* Fretboard Poet */,
+				0BE5CC981A971310000B5790 /* Tests */,
+				0BE5CC7A1A971310000B5790 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0BE5CC7A1A971310000B5790 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0BE5CC791A971310000B5790 /* Fretboard Poet.app */,
+				0BE5CC951A971310000B5790 /* Fretboard PoetTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0BE5CC7B1A971310000B5790 /* Fretboard Poet */ = {
+			isa = PBXGroup;
+			children = (
+				0BD059F41A99EF2400E82D54 /* Track */,
+				0BBD19D01AB5ACA70026F17D /* Music */,
+				0B3A4B601AB28BA300A2FCC7 /* Recorder */,
+				0B07C6891AA80493005B309C /* UI */,
+				0BE5CC7C1A971310000B5790 /* Supporting Files */,
+			);
+			path = "Fretboard Poet";
+			sourceTree = "<group>";
+		};
+		0BE5CC7C1A971310000B5790 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0BE5CCAB1A971B56000B5790 /* Songs */,
+				0BE5CC7D1A971310000B5790 /* Info.plist */,
+				0BE5CC7E1A971310000B5790 /* main.m */,
+				0B8F47B71AD158AF004E661D /* AVFoundation.framework */,
+				0B8F47B41AD15860004E661D /* QuartzCore.framework */,
+				0B42E8241AE7825B0072373F /* To Do.txt */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0BE5CC981A971310000B5790 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				0B8E12DF1AA5F75E00AF2648 /* TrackTests.m */,
+				0B8E12E11AA5F82600AF2648 /* TrackDataTests.m */,
+				0BD8063B1AA6C1B000AD89AA /* TimedEventsTest.m */,
+				0BF30C501AB31E0E00BE6E2E /* TrackRecorderTests.m */,
+				0BA828FE1AB6D09300821ED9 /* NotesTests.m */,
+				0B3C27301ABC1E9A0026BE8C /* ChordsTests.m */,
+				0B4236EB1ABD6A6C00E18DE4 /* ScalesTests.m */,
+				0B1D0BFA1ACC0A04009F155D /* GuitarStringTests.m */,
+				0B789C851ACD44EE000F0BBC /* FretboardTests.m */,
+				0BE5CC991A971310000B5790 /* Supporting Files */,
+			);
+			name = Tests;
+			path = "Fretboard PoetTests";
+			sourceTree = "<group>";
+		};
+		0BE5CC991A971310000B5790 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0B90061F1AA8928E00864948 /* testsong.mp3 */,
+				0B8E12DC1AA5F68C00AF2648 /* testsong.json */,
+				0BE5CC9A1A971310000B5790 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0BE5CCAB1A971B56000B5790 /* Songs */ = {
+			isa = PBXGroup;
+			children = (
+				0B9006181AA88EE400864948 /* samplesong.json */,
+				0B9006191AA88EE400864948 /* samplesong.m4a */,
+			);
+			name = Songs;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0BE5CC781A971310000B5790 /* Fretboard Poet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0BE5CC9F1A971310000B5790 /* Build configuration list for PBXNativeTarget "Fretboard Poet" */;
+			buildPhases = (
+				0BE5CC751A971310000B5790 /* Sources */,
+				0BE5CC761A971310000B5790 /* Frameworks */,
+				0BE5CC771A971310000B5790 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Fretboard Poet";
+			productName = "Fretboard Poet";
+			productReference = 0BE5CC791A971310000B5790 /* Fretboard Poet.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0BE5CC941A971310000B5790 /* Fretboard PoetTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0BE5CCA21A971310000B5790 /* Build configuration list for PBXNativeTarget "Fretboard PoetTests" */;
+			buildPhases = (
+				0BE5CC911A971310000B5790 /* Sources */,
+				0BE5CC921A971310000B5790 /* Frameworks */,
+				0BE5CC931A971310000B5790 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0BE5CC971A971310000B5790 /* PBXTargetDependency */,
+			);
+			name = "Fretboard PoetTests";
+			productName = "Fretboard PoetTests";
+			productReference = 0BE5CC951A971310000B5790 /* Fretboard PoetTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0BE5CC711A971310000B5790 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "John Doerfler";
+				TargetAttributes = {
+					0BE5CC781A971310000B5790 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					0BE5CC941A971310000B5790 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 0BE5CC781A971310000B5790;
+					};
+				};
+			};
+			buildConfigurationList = 0BE5CC741A971310000B5790 /* Build configuration list for PBXProject "Fretboard Poet" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0BE5CC701A971310000B5790;
+			productRefGroup = 0BE5CC7A1A971310000B5790 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0BE5CC781A971310000B5790 /* Fretboard Poet */,
+				0BE5CC941A971310000B5790 /* Fretboard PoetTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0BE5CC771A971310000B5790 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0BB5FF4F1AD2532300F7D28B /* fret.png in Resources */,
+				0B90061A1AA88EE400864948 /* samplesong.json in Resources */,
+				0B8F47BC1AD16236004E661D /* fretboard.png in Resources */,
+				0B90061B1AA88EE400864948 /* samplesong.m4a in Resources */,
+				0BE5CC8B1A971310000B5790 /* Main.storyboard in Resources */,
+				0BE5CC901A971310000B5790 /* LaunchScreen.xib in Resources */,
+				0BE5CC8D1A971310000B5790 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0BE5CC931A971310000B5790 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B9006201AA8928E00864948 /* testsong.mp3 in Resources */,
+				0B8E12DE1AA5F68C00AF2648 /* testsong.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0BE5CC751A971310000B5790 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B789C841ACD42C2000F0BBC /* StringInstrument.m in Sources */,
+				0B800A911AA6BD410045FC55 /* Track.m in Sources */,
+				0B4236E61ABD668500E18DE4 /* PatternMatcher.m in Sources */,
+				0B3A4B631AB28BCA00A2FCC7 /* TrackRecorder.m in Sources */,
+				0BE5CCAE1A972889000B5790 /* TrackPlayer.m in Sources */,
+				0BBD19D91AB5B1660026F17D /* Chords.m in Sources */,
+				0BE5CC881A971310000B5790 /* TrackRecorderView.m in Sources */,
+				0BA828FC1AB6CF6400821ED9 /* Notes.m in Sources */,
+				0BBD19D31AB5ACED0026F17D /* Scales.m in Sources */,
+				0BE5CC821A971310000B5790 /* AppDelegate.m in Sources */,
+				0B408C8D1AA45BA200FA798D /* TimeEvent.m in Sources */,
+				0BD059F71A99F30A00E82D54 /* TrackData.m in Sources */,
+				0BDAA6DC1AD8D71300374658 /* UIFretNoteController.m in Sources */,
+				0B1D0BF91ACC09B5009F155D /* InstrumentString.m in Sources */,
+				0BE5CC851A971310000B5790 /* TrackPlayerView.m in Sources */,
+				0B8F47B21AD1532E004E661D /* UIFretboard.m in Sources */,
+				0BD059FA1A9DA29300E82D54 /* TimeEvents.m in Sources */,
+				0BE5CC7F1A971310000B5790 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0BE5CC911A971310000B5790 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B4236EC1ABD6A6C00E18DE4 /* ScalesTests.m in Sources */,
+				0B8E12E01AA5F75E00AF2648 /* TrackTests.m in Sources */,
+				0B1D0BFB1ACC0A04009F155D /* GuitarStringTests.m in Sources */,
+				0B8E12E21AA5F82600AF2648 /* TrackDataTests.m in Sources */,
+				0B800A921AA6BD410045FC55 /* Track.m in Sources */,
+				0B408C8E1AA4677200FA798D /* TimeEvent.m in Sources */,
+				0BA828FF1AB6D09300821ED9 /* NotesTests.m in Sources */,
+				0B789C861ACD44EE000F0BBC /* FretboardTests.m in Sources */,
+				0BD8063C1AA6C1B000AD89AA /* TimedEventsTest.m in Sources */,
+				0B3C27311ABC1E9A0026BE8C /* ChordsTests.m in Sources */,
+				0BF30C511AB31E0E00BE6E2E /* TrackRecorderTests.m in Sources */,
+				0B408C8F1AA4677500FA798D /* TimeEvents.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0BE5CC971A971310000B5790 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0BE5CC781A971310000B5790 /* Fretboard Poet */;
+			targetProxy = 0BE5CC961A971310000B5790 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0BE5CC891A971310000B5790 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0BE5CC8A1A971310000B5790 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0BE5CC8E1A971310000B5790 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0BE5CC8F1A971310000B5790 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0BE5CC9D1A971310000B5790 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		0BE5CC9E1A971310000B5790 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0BE5CCA01A971310000B5790 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Fretboard Poet/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "Fretboard Poet";
+			};
+			name = Debug;
+		};
+		0BE5CCA11A971310000B5790 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Fretboard Poet/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "Fretboard Poet";
+			};
+			name = Release;
+		};
+		0BE5CCA31A971310000B5790 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Fretboard PoetTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "Fretboard PoetTests";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fretboard Poet.app/Fretboard Poet";
+			};
+			name = Debug;
+		};
+		0BE5CCA41A971310000B5790 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Fretboard PoetTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "Fretboard PoetTests";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fretboard Poet.app/Fretboard Poet";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0BE5CC741A971310000B5790 /* Build configuration list for PBXProject "Fretboard Poet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0BE5CC9D1A971310000B5790 /* Debug */,
+				0BE5CC9E1A971310000B5790 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0BE5CC9F1A971310000B5790 /* Build configuration list for PBXNativeTarget "Fretboard Poet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0BE5CCA01A971310000B5790 /* Debug */,
+				0BE5CCA11A971310000B5790 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0BE5CCA21A971310000B5790 /* Build configuration list for PBXNativeTarget "Fretboard PoetTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0BE5CCA31A971310000B5790 /* Debug */,
+				0BE5CCA41A971310000B5790 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0BE5CC711A971310000B5790 /* Project object */;
+}

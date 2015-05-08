@@ -1,0 +1,79 @@
+{
+  "meta": {
+    "name": "Bad Bad Day",
+    "artist":"Will Ray",
+    "duration":341000,
+    "bpm":60,
+    "key":"A minor"
+  },
+  "events":[
+            {
+            "time":0,
+            "key":"A minor",
+            "chord":"A minor",
+            "beat":1,
+            "scale":"A minor"
+            },
+            {
+            "time":2000,
+            "chord":"D dom7",
+            "beat":1
+            },
+            {
+            "time":4000,
+            "key":"A minor",
+            "chord":"A minor",
+            "beat":1
+            },
+            {
+            "time":6000,
+            "chord":"D major",
+            "beat":1,
+            "key":"D major"
+            },
+            {
+            "time":8000,
+            "key":"A minor",
+            "chord":"A minor",
+            "beat":1
+            },
+            {
+            "time":10000,
+            "chord":"D major",
+            "beat":1,
+            "key":"D major"
+            },
+            {
+            "time":12000,
+            "key":"A minor",
+            "chord":"A minor",
+            "beat":1
+            },
+            {
+            "time":14000,
+            "chord":"D major",
+            "beat":1,
+            "key":"D major"
+            },
+            {
+            "time":16000,
+            "key":"A minor",
+            "chord":"A minor",
+            "beat":1
+            },
+            {
+            "time":18000,
+            "chord":"D major",
+            "beat":1,
+            "key":"D major"
+            },
+            {
+            "time":20000,
+            "key":"A minor",
+            "chord":"A minor",
+            "beat":1
+            }
+
+
+      ]
+}

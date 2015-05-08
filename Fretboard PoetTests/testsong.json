@@ -1,0 +1,43 @@
+{
+  "meta": {
+    "name": "no name",
+    "artist":"no artist",
+    "duration":30.44,
+    "bpm":60,
+    "key":"Amin"
+  },
+  "events":[
+            {
+            "time":0,
+            "key":"A",
+            "chord":"Amin",
+            "beat":1,
+            "scale":"Amin"
+            },
+            {
+            "time":1000,
+            "key":"B",
+            "chord":"Bmin",
+            "beat":2,
+            "scale":"Bmin"
+            },
+            {
+            "time":2000,
+            "key":"C",
+            "chord":"Cmin",
+            "beat":3,
+            "scale":"Cmin"
+            }
+            ,
+            {
+            "time":3000,
+            "key":"D",
+            "beat":4,
+            "scale":"Dmin"
+            },
+            {
+            "time":4000,
+            "chord":"Emin"
+            }
+            ]
+}

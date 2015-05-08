@@ -1,0 +1,56 @@
+- add new song
+- add more common chords dom 7
+
+
+
+
+- test for memory leaks
+- allow fretboards with < 24 frets
+
+
+
+
+
+
+
+
+
+
+
+- set current fretnotecontrollers highlightChordScale props and redraw when needed
+- pretty fret note controllers when drawing
+
+
+
+
+
+
+
+
+- these need to be saved as defaults in core data
+@property (nonatomic) bool *highlightSongKey;
+@property (nonatomic) bool *highlightChordScale;
+@property (nonatomic) bool *highlightChord;
+@property (nonatomic) bool *showNoteNames;
+
+
+
+
+
+// MEDIUM IDEAS
+- move scales and chords so they come from an editable xml file
+- move tunings/instruments so they come from an editable xml file
+
+
+// BIG IDEAS
+- ability to make your own tunings
+- ability to make your own chords
+- ability to make your own songs
+
+- ear trainer
+- chordal ear trainer
+
+
+// show peter
+- fretboard explorer idea as a beta
+
