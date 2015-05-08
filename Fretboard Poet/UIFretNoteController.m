@@ -103,32 +103,29 @@ NSString * const ALL_NOTES_OFF_NOTIFICATION = @"ALL_NOTES_OFF_NOTIFICATION";
   if( hasChord || hasChordScale || hasKey )
   {
     showNote = true;
-    float alphaInc = 0.30;
-    float alpha = 0;
     
     self.layer.backgroundColor =  [UIColor clearColor].CGColor;
     
     // set to gray
     if (hasKey)
-    {  self.layer.backgroundColor = [UIColor colorWithRed:1 green:1 blue:1 alpha:0.4].CGColor;
-      alpha += alphaInc;
+    {  self.layer.backgroundColor = [UIColor colorWithRed:0.5 green:0.5 blue:0.5 alpha:0.9].CGColor;
     }
     
     if (hasChordScale)
     {
-      self.layer.backgroundColor = [UIColor colorWithRed:1 green:1 blue:1 alpha:0.4].CGColor;
+      self.layer.backgroundColor = [UIColor colorWithRed:0.5 green:0.5 blue:0.5 alpha:0.9].CGColor;
     }
 
     // green
     if (hasChord)
     {
-      self.layer.backgroundColor = [UIColor colorWithRed:0 green:1 blue:0 alpha:0.8].CGColor;
+      self.layer.backgroundColor = [UIColor colorWithRed:0 green:1 blue:0 alpha:0.9].CGColor;
     }
     
     // blue
     if (hasChord && ! hasChordScale )
     {
-      self.layer.backgroundColor = [UIColor colorWithRed:0 green:0 blue:1 alpha:0.8].CGColor;
+      self.layer.backgroundColor = [UIColor colorWithRed:0 green:0 blue:1 alpha:0.9].CGColor;
     }
     
     
@@ -181,7 +178,7 @@ NSString * const ALL_NOTES_OFF_NOTIFICATION = @"ALL_NOTES_OFF_NOTIFICATION";
 {
   _layer = layer;
   _layer.masksToBounds = YES;
-  _layer.cornerRadius = 10.0;
+  _layer.cornerRadius = 14.0;
   
   CATextLayer *label = [CATextLayer new];
   [label setFont: @"Helvetica-Bold"];

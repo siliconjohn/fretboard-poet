@@ -3,12 +3,13 @@
 CGFloat const NUT_WIDTH = 15;
 CGFloat const FRET_COUNT = 24;
 CGFloat const FRET_WIRE_WIDTH = 10;
-CGFloat const OPEN_STRING_WIDTH = 50;
+CGFloat const OPEN_STRING_WIDTH = 40;
 CGFloat const FIRST_FRET_WIDTH = 120;
 CGFloat const FRETBOARD_MAX_WIDTH = 2000.0f;
 CGFloat const FRETBOARD_MAX_HEIGHT = 250.0f;
 CGFloat const FINGERBOARD_MAX_HEIGHT = 200.0f;
 CGFloat const FINGERBOARD_NUMBERS_HEIGHT = 30.0f;
+CGFloat const V_NOTE_SPACING = 4.0f;
 
 @implementation UIFretboard
 
@@ -336,7 +337,18 @@ CGFloat const FINGERBOARD_NUMBERS_HEIGHT = 30.0f;
     for( int i = 0; i < [noteXs count]; i++)
     {
       CALayer *newLayer = [CALayer layer];
-      CGRect rect = CGRectMake( [[noteXs objectAtIndex:i]floatValue], y + fretboardY, [[noteWidths objectAtIndex: i]floatValue], stringRectHeight);
+      
+      float noteW = [[noteWidths objectAtIndex: i]floatValue];
+      float noteX = [[noteXs objectAtIndex:i]floatValue];
+      
+      if( noteW > OPEN_STRING_WIDTH )
+      {
+        noteX = noteX + ( noteW - OPEN_STRING_WIDTH ) / 2;
+        noteW = OPEN_STRING_WIDTH;
+      }
+      
+      CGRect rect = CGRectMake( noteX, y + fretboardY + V_NOTE_SPACING, noteW, stringRectHeight - V_NOTE_SPACING - V_NOTE_SPACING);
+      
       newLayer.frame = rect;
       newLayer.hidden = true;
       [stringLayer addSublayer: newLayer];
