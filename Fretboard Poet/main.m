@@ -1,10 +1,4 @@
-//
-//  main.m
-//  Fretboard Warrior
-//
-//  Created by John Doerfler on 2/20/15.
-//  Copyright (c) 2015 John Doerfler. All rights reserved.
-//
+
 
 #import <UIKit/UIKit.h>
 #import "AppDelegate.h"
