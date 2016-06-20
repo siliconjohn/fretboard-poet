@@ -14,66 +14,65 @@
             "beat":1,
             "scale":"A minor"
             },
-            {
-            "time":2000,
-            "chord":"D dom7",
-            "beat":1
-            },
-            {
-            "time":4000,
-            "key":"A minor",
-            "chord":"A minor",
-            "beat":1
-            },
-            {
-            "time":6000,
-            "chord":"D major",
-            "beat":1,
-            "key":"D major"
-            },
-            {
-            "time":8000,
-            "key":"A minor",
-            "chord":"A minor",
-            "beat":1
-            },
-            {
-            "time":10000,
-            "chord":"D major",
-            "beat":1,
-            "key":"D major"
-            },
-            {
-            "time":12000,
-            "key":"A minor",
-            "chord":"A minor",
-            "beat":1
-            },
-            {
-            "time":14000,
-            "chord":"D major",
-            "beat":1,
-            "key":"D major"
-            },
-            {
-            "time":16000,
-            "key":"A minor",
-            "chord":"A minor",
-            "beat":1
-            },
-            {
-            "time":18000,
-            "chord":"D major",
-            "beat":1,
-            "key":"D major"
-            },
-            {
-            "time":20000,
-            "key":"A minor",
-            "chord":"A minor",
-            "beat":1
-            }
-
-
-      ]
+            {"time":6809,
+            "chord":"E dom7"},
+            {"time":7862,
+            "chord":"A minor"},
+            {"time":15414,
+            "chord":"D major"},
+            {"time":19156,
+            "chord":"A minor"},
+            {"time":22924,
+            "chord":"E dom7"},
+            {"time":24716,
+            "chord":"D major"},
+            {"time":26628,
+            "chord":"A minor"},
+            {"time":29285,
+            "chord":"E dom7"},
+            {"time":30364,
+            "chord":"A minor"},
+            {"time":37929,
+            "chord":"D major"},
+            {"time":41617,
+            "chord":"A minor"},
+            {"time":45440,
+            "chord":"E dom7"},
+            {"time":47216,
+            "chord":"D major"},
+            {"time":49168,
+            "chord":"A minor"},
+            {"time":51817,
+            "chord":"E dom7"},
+            {"time":52872,
+            "chord":"A minor"},
+            {"time":60347,
+            "chord":"D major"},
+            {"time":64076,
+            "chord":"A minor"},
+            {"time":67939,
+            "chord":"E dom7"},
+            {"time":69827,
+            "chord":"D major"},
+            {"time":71691,
+            "chord":"A minor"},
+            {"time":74347,
+            "chord":"E dom7"},
+            {"time":75414,
+            "chord":"A minor"},
+            {"time":82937,
+            "chord":"D major"},
+            {"time":86625,
+            "chord":"A minor"},
+            {"time":90456,
+            "chord":"E dom7"},
+            {"time":92288,
+            "chord":"D major"},
+            {"time":94184,
+            "chord":"A minor"},
+            {"time":96836,
+            "chord":"E dom7"},
+            {"time":97920,
+            "chord":"A minor"}
+            ]
 }
