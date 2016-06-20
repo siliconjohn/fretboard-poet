@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		0B1D0BF91ACC09B5009F155D /* InstrumentString.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B1D0BF81ACC09B5009F155D /* InstrumentString.m */; };
 		0B1D0BFB1ACC0A04009F155D /* GuitarStringTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B1D0BFA1ACC0A04009F155D /* GuitarStringTests.m */; };
+		0B1DC9C21CAF76BC00A8E069 /* samplesong.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0B1DC9C11CAF76BC00A8E069 /* samplesong.mp3 */; };
+		0B1DC9C91CAF7B4800A8E069 /* grill.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B1DC9C81CAF7B4800A8E069 /* grill.png */; };
+		0B1DC9CB1CAF7BF700A8E069 /* greengrill.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B1DC9CA1CAF7BF700A8E069 /* greengrill.png */; };
 		0B3A4B631AB28BCA00A2FCC7 /* TrackRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B3A4B621AB28BCA00A2FCC7 /* TrackRecorder.m */; };
 		0B3C27311ABC1E9A0026BE8C /* ChordsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B3C27301ABC1E9A0026BE8C /* ChordsTests.m */; };
 		0B408C8D1AA45BA200FA798D /* TimeEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B408C8C1AA45BA200FA798D /* TimeEvent.m */; };
@@ -28,7 +31,6 @@
 		0B8F47B81AD158AF004E661D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B8F47B71AD158AF004E661D /* AVFoundation.framework */; };
 		0B8F47BC1AD16236004E661D /* fretboard.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B8F47BB1AD16236004E661D /* fretboard.png */; };
 		0B90061A1AA88EE400864948 /* samplesong.json in Resources */ = {isa = PBXBuildFile; fileRef = 0B9006181AA88EE400864948 /* samplesong.json */; };
-		0B90061B1AA88EE400864948 /* samplesong.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 0B9006191AA88EE400864948 /* samplesong.m4a */; };
 		0B9006201AA8928E00864948 /* testsong.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0B90061F1AA8928E00864948 /* testsong.mp3 */; };
 		0BA828FC1AB6CF6400821ED9 /* Notes.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BA828FB1AB6CF6400821ED9 /* Notes.m */; };
 		0BA828FF1AB6D09300821ED9 /* NotesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BA828FE1AB6D09300821ED9 /* NotesTests.m */; };
@@ -64,6 +66,9 @@
 		0B1D0BF71ACC09B5009F155D /* InstrumentString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InstrumentString.h; sourceTree = "<group>"; };
 		0B1D0BF81ACC09B5009F155D /* InstrumentString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InstrumentString.m; sourceTree = "<group>"; };
 		0B1D0BFA1ACC0A04009F155D /* GuitarStringTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GuitarStringTests.m; sourceTree = "<group>"; };
+		0B1DC9C11CAF76BC00A8E069 /* samplesong.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = samplesong.mp3; sourceTree = "<group>"; };
+		0B1DC9C81CAF7B4800A8E069 /* grill.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grill.png; sourceTree = "<group>"; };
+		0B1DC9CA1CAF7BF700A8E069 /* greengrill.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = greengrill.png; sourceTree = "<group>"; };
 		0B3A4B611AB28BCA00A2FCC7 /* TrackRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrackRecorder.h; sourceTree = "<group>"; };
 		0B3A4B621AB28BCA00A2FCC7 /* TrackRecorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrackRecorder.m; sourceTree = "<group>"; };
 		0B3C27301ABC1E9A0026BE8C /* ChordsTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChordsTests.m; sourceTree = "<group>"; };
@@ -87,7 +92,6 @@
 		0B8F47B71AD158AF004E661D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		0B8F47BB1AD16236004E661D /* fretboard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fretboard.png; sourceTree = "<group>"; };
 		0B9006181AA88EE400864948 /* samplesong.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = samplesong.json; sourceTree = "<group>"; };
-		0B9006191AA88EE400864948 /* samplesong.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = samplesong.m4a; sourceTree = "<group>"; };
 		0B90061F1AA8928E00864948 /* testsong.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = testsong.mp3; sourceTree = "<group>"; };
 		0BA828FA1AB6CF6400821ED9 /* Notes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Notes.h; sourceTree = "<group>"; };
 		0BA828FB1AB6CF6400821ED9 /* Notes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Notes.m; sourceTree = "<group>"; };
@@ -189,6 +193,15 @@
 				0B1D0BF81ACC09B5009F155D /* InstrumentString.m */,
 			);
 			name = Instrument;
+			sourceTree = "<group>";
+		};
+		0B1DC9C31CAF787F00A8E069 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				0B1DC9CA1CAF7BF700A8E069 /* greengrill.png */,
+				0B1DC9C81CAF7B4800A8E069 /* grill.png */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 		0B3A4B601AB28BA300A2FCC7 /* Recorder */ = {
@@ -316,6 +329,7 @@
 		0BE5CC7C1A971310000B5790 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				0B1DC9C31CAF787F00A8E069 /* Images */,
 				0BE5CCAB1A971B56000B5790 /* Songs */,
 				0BE5CC7D1A971310000B5790 /* Info.plist */,
 				0BE5CC7E1A971310000B5790 /* main.m */,
@@ -357,8 +371,8 @@
 		0BE5CCAB1A971B56000B5790 /* Songs */ = {
 			isa = PBXGroup;
 			children = (
+				0B1DC9C11CAF76BC00A8E069 /* samplesong.mp3 */,
 				0B9006181AA88EE400864948 /* samplesong.json */,
-				0B9006191AA88EE400864948 /* samplesong.m4a */,
 			);
 			name = Songs;
 			sourceTree = "<group>";
@@ -445,10 +459,12 @@
 			files = (
 				0BB5FF4F1AD2532300F7D28B /* fret.png in Resources */,
 				0B90061A1AA88EE400864948 /* samplesong.json in Resources */,
+				0B1DC9C21CAF76BC00A8E069 /* samplesong.mp3 in Resources */,
 				0B8F47BC1AD16236004E661D /* fretboard.png in Resources */,
-				0B90061B1AA88EE400864948 /* samplesong.m4a in Resources */,
+				0B1DC9CB1CAF7BF700A8E069 /* greengrill.png in Resources */,
 				0BE5CC8B1A971310000B5790 /* Main.storyboard in Resources */,
 				0BE5CC901A971310000B5790 /* LaunchScreen.xib in Resources */,
+				0B1DC9C91CAF7B4800A8E069 /* grill.png in Resources */,
 				0BE5CC8D1A971310000B5790 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

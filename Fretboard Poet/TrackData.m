@@ -161,11 +161,40 @@ NSString * const ADD_TRACK_DATA_NOTIFICATION = @"ADD_TRACK_DATA_NOTIFICATION";
     long time = [[dict valueForKey:@"time"] longValue];
 
     [_chordData addTimeEvent:time data:[dict valueForKey:@"chord"]];
+    
+    NSLog(@"{\"time\":%ld,\n\"chord\":\"%@\"},",time - 250,[dict valueForKey:@"chord"]);
+
   }
   @catch (NSException * e)
   {
     NSLog(@"Exception: %@", e);
   }
+   
+  
+//  {
+//    "time":0,
+//    "key":"A minor",
+//    "chord":"A minor",
+//    "beat":1,
+//    "scale":"A minor"
+//  },
+//  
+  //[NSDictionary di
+  //[_chordData to
+   //_trackJSON = [NSJSONSerialization JSONObjectWithData:JSONData options:NSJSONReadingMutableContainers error:&error];
+  
+  
+  // load the file as NSData
+//  NSData *JSONData = [NSData dataWithContentsOfURL:_dataURL];
+//  if (JSONData == nil)return false;
+//  
+//  // parse NSData into JSON
+//  
+//  
+//  
+//  _trackJSON = [NSJSONSerialization JSONObjectWithData:JSONData
+//                                               options:NSJSONReadingMutableContainers error:&error];
+//  
   
   // todo add key, scale data etc
   // add test for posting notification

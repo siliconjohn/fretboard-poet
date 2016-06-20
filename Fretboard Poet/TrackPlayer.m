@@ -66,7 +66,7 @@ NSString * const TRACK_PLAY_NOTIFICATION = @"TRACK_PLAY_NOTIFICATION";
 - (void) play
 {
   if(!_canPlay || [_audioPlayer isPlaying]) return;
-  [_audioPlayer setVolume:0.0];
+  //[_audioPlayer setVolume:0.0];
   [_audioPlayer play];
   [self startTimer];
   [self postPlayNotification];

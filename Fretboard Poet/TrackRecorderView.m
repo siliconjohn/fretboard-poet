@@ -61,7 +61,7 @@
   ///////////////////////////
   
   trackRecorder = [TrackRecorder new];
-  [trackRecorder initNewTrack:[[NSBundle mainBundle] pathForResource:@"samplesong" ofType:@".m4a"] dataPath:[[NSBundle mainBundle] pathForResource:@"samplesong" ofType:@".json"]];
+  [trackRecorder initNewTrack:[[NSBundle mainBundle] pathForResource:@"samplesong" ofType:@".mp3"] dataPath:[[NSBundle mainBundle] pathForResource:@"samplesong" ofType:@".json"]];
   if([trackRecorder canPlay])
     [self enableUI];
   

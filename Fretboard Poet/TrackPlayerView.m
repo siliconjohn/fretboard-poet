@@ -288,6 +288,7 @@
 {
   [super viewDidLoad];
   
+  //self.view.backgroundColor=[UIColor colorWithPatternImage:[UIImage imageNamed:@"grill.png"]];
   [self clearUI];
   
   [[NSNotificationCenter defaultCenter]
@@ -325,7 +326,7 @@
   ///////////////////////////
   
   track = [Track new];
-  [track initNewTrack:[[NSBundle mainBundle] pathForResource:@"samplesong" ofType:@".m4a"] dataPath:[[NSBundle mainBundle] pathForResource:@"samplesong" ofType:@".json"]];
+  [track initNewTrack:[[NSBundle mainBundle] pathForResource:@"samplesong" ofType:@".mp3"] dataPath:[[NSBundle mainBundle] pathForResource:@"samplesong" ofType:@".json"]];
   if([track canPlay])
     [self enableUI];
   _fretBoardView.trackIDObject = track;
@@ -343,17 +344,6 @@
   
   ///////////////////////////
 }
-
-
-
-
-
-
-
-
-
-
-
 
 - (void) enableUI
 {

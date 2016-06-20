@@ -10,6 +10,7 @@
 }
 
 @property UIFretboard *fretBoardView;
+@property (strong, nonatomic) IBOutlet UIView *backgroundView;
 @property (weak, nonatomic) IBOutlet UIButton *playPauseButton;
 @property (weak, nonatomic) IBOutlet UIButton *loopButton;
 @property (weak, nonatomic) IBOutlet UIButton *rewindButton;
